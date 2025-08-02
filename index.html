@@ -1,1 +1,890 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azadi Offer 2025 | Free 5GB & Minutes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #004d26 0%, #002a1a 50%, #0f2e1d 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        /* Decorative elements */
+        .decoration {
+            position: absolute;
+            z-index: 0;
+        }
+        
+        .circle-1 {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(0, 255, 157, 0.15) 0%, rgba(0, 255, 157, 0) 70%);
+            top: 10%;
+            left: 10%;
+        }
+        
+        .circle-2 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 204, 0, 0.15) 0%, rgba(255, 204, 0, 0) 70%);
+            bottom: 15%;
+            right: 15%;
+        }
+        
+        .star {
+            position: absolute;
+            color: #ffcc00;
+            font-size: 1.2rem;
+            opacity: 0.7;
+            animation: twinkle 3s infinite;
+        }
+        
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 1; }
+        }
+        
+        .container {
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+            padding: 30px;
+            background: rgba(0, 42, 26, 0.85);
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+            margin-top: 30px;
+            position: relative;
+            z-index: 2;
+            border: 2px solid #ffcc00;
+        }
+        
+        header {
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .flag-decoration {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+            height: 20px;
+        }
+        
+        .flag-stripe {
+            height: 100%;
+            width: 30%;
+        }
+        
+        .stripe-green { background-color: #0a5; }
+        .stripe-white { background-color: white; }
+        
+        h1 {
+            font-size: 2.8rem;
+            color: #ffcc00;
+            text-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #ffcc00, #ff9900);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 1px;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: #00ff9d;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(0, 255, 157, 0.5);
+            font-weight: 500;
+        }
+        
+        .offer-banner {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .offer-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px 20px;
+            width: 220px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .offer-card:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, #ffcc00, #00cc66);
+        }
+        
+        .offer-card:hover {
+            transform: translateY(-8px);
+            border-color: #ffcc00;
+            box-shadow: 0 10px 25px rgba(255, 204, 0, 0.5);
+        }
+        
+        .offer-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: #00ff9d;
+            text-shadow: 0 0 15px rgba(0, 255, 157, 0.5);
+        }
+        
+        .offer-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #ffcc00;
+        }
+        
+        .offer-desc {
+            font-size: 1rem;
+            color: #ddd;
+            line-height: 1.5;
+        }
+        
+        .operator-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .operator-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .operator-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        }
+        
+        .operator-card:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+        }
+        
+        .zong:before { background: linear-gradient(to right, #ff0000, #ff6666); }
+        .telenor:before { background: linear-gradient(to right, #00aaff, #0066cc); }
+        .jazz:before { background: linear-gradient(to right, #ffcc00, #ff9900); }
+        .ufone:before { background: linear-gradient(to right, #00cc66, #00994d); }
+        
+        .operator-logo {
+            height: 80px;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+            padding: 8px;
+        }
+        
+        .operator-logo img {
+            height: 100%;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+        }
+        
+        .operator-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 10px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .operator-offer {
+            font-size: 1rem;
+            color: #aaa;
+            margin-top: 8px;
+            position: relative;
+            z-index: 2;
+            font-weight: 500;
+        }
+        
+        .form-page {
+            display: none;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 30px;
+            background: rgba(0, 42, 26, 0.9);
+            border-radius: 20px;
+            border: 2px solid #ffcc00;
+            box-shadow: 0 0 30px rgba(255, 204, 0, 0.4);
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .form-header {
+            margin-bottom: 25px;
+        }
+        
+        .form-operator-logo {
+            height: 90px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+        
+        .form-operator-logo img {
+            height: 100%;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+        }
+        
+        .form-title {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: #ffcc00;
+            text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+        }
+        
+        .form-subtitle {
+            font-size: 1.2rem;
+            color: #00ff9d;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .input-group {
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        input {
+            width: 100%;
+            padding: 16px 20px;
+            border-radius: 50px;
+            border: 2px solid #00ff9d;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1.1rem;
+            text-align: center;
+            outline: none;
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+        }
+        
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        input:focus {
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 20px rgba(0, 255, 157, 0.8);
+            border-color: #ffcc00;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #ffcc00, #ff9900);
+            color: #332200;
+            border: none;
+            padding: 16px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            letter-spacing: 1px;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255, 204, 0, 0.8);
+            background: linear-gradient(135deg, #ffd52e, #ffaa00);
+        }
+        
+        .submit-btn:active {
+            transform: translateY(-2px);
+        }
+        
+        .submit-btn:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .submit-btn.internet {
+            background: linear-gradient(135deg, #00ff9d, #00cc66);
+            color: #003320;
+        }
+        
+        .submit-btn.internet:hover {
+            background: linear-gradient(135deg, #2effb3, #00e673);
+        }
+        
+        .back-btn {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            margin-top: 20px;
+            width: 100%;
+            padding: 14px;
+            border-radius: 50px;
+            border: none;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+        
+        .footer {
+            margin-top: 40px;
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            width: 100%;
+            line-height: 1.6;
+        }
+        
+        .error-message {
+            color: #ff6666;
+            font-size: 1rem;
+            margin-top: 10px;
+            min-height: 24px;
+            font-weight: 500;
+        }
+        
+        .success-message {
+            color: #00ff9d;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            font-weight: 600;
+            text-shadow: 0 0 10px rgba(0, 255, 157, 0.3);
+            display: none;
+        }
+        
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .countdown-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            min-width: 70px;
+        }
+        
+        .countdown-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #ffcc00;
+        }
+        
+        .countdown-label {
+            font-size: 0.9rem;
+            color: #aaa;
+            margin-top: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.4rem;
+            }
+            
+            .offer-banner {
+                gap: 20px;
+            }
+            
+            .offer-card {
+                width: 100%;
+                max-width: 280px;
+                padding: 20px;
+            }
+            
+            .operator-grid {
+                gap: 20px;
+            }
+            
+            .operator-logo {
+                height: 70px;
+            }
+            
+            .operator-name {
+                font-size: 1.3rem;
+            }
+            
+            .form-operator-logo {
+                height: 80px;
+            }
+            
+            .form-title {
+                font-size: 1.8rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
+            
+            .container {
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 1.9rem;
+            }
+            
+            h2 {
+                font-size: 1.2rem;
+            }
+            
+            .offer-card {
+                max-width: 100%;
+            }
+            
+            .operator-logo {
+                height: 65px;
+            }
+            
+            .form-page {
+                padding: 25px 20px;
+            }
+            
+            .form-title {
+                font-size: 1.6rem;
+            }
+            
+            .form-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            input {
+                padding: 14px 18px;
+                font-size: 1rem;
+            }
+            
+            .submit-btn {
+                padding: 14px;
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Decorative elements -->
+    <div class="decoration circle-1"></div>
+    <div class="decoration circle-2"></div>
+    
+    <div class="container" id="main-page">
+        <header>
+            <div class="flag-decoration">
+                <div class="flag-stripe stripe-green"></div>
+                <div class="flag-stripe stripe-white"></div>
+                <div class="flag-stripe stripe-green"></div>
+            </div>
+            <h1>Azadi Offer 2025</h1>
+            <h2>Muft 5GB Internet or 100 Minutes</h2>
+        </header>
+        
+        <div class="countdown">
+            <div class="countdown-box">
+                <div class="countdown-value" id="days">14</div>
+                <div class="countdown-label">Days</div>
+            </div>
+            <div class="countdown-box">
+                <div class="countdown-value" id="hours">08</div>
+                <div class="countdown-label">Hours</div>
+            </div>
+            <div class="countdown-box">
+                <div class="countdown-value" id="minutes">42</div>
+                <div class="countdown-label">Minutes</div>
+            </div>
+            <div class="countdown-box">
+                <div class="countdown-value" id="seconds">19</div>
+                <div class="countdown-label">Seconds</div>
+            </div>
+        </div>
+        
+        <div class="offer-banner">
+            <div class="offer-card">
+                <div class="offer-icon">
+                    <i class="fas fa-wifi"></i>
+                </div>
+                <div class="offer-title">5GB Internet</div>
+                <div class="offer-desc">Free high-speed internet for 3 days. Enjoy streaming, browsing and downloads without limits!</div>
+            </div>
+            
+            <div class="offer-card">
+                <div class="offer-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="offer-title">100 Minutes</div>
+                <div class="offer-desc">Free calls to all networks across Pakistan. Stay connected with friends and family!</div>
+            </div>
+        </div>
+        
+        <h2 style="margin-top: 20px;">Select Your Network</h2>
+        <div class="operator-grid">
+            <div class="operator-card zong" data-operator="zong">
+                <div class="operator-logo">
+                    <img src="https://i.ibb.co/cSqWrGbm/Zong-4g-Mobile-Sim-Company-Logo-PNG-Image.png" alt="Zong">
+                </div>
+                <div class="operator-name">Zong</div>
+                <div class="operator-offer">Free 5GB or 100 Minutes</div>
+            </div>
+            
+            <div class="operator-card telenor" data-operator="telenor">
+                <div class="operator-logo">
+                    <img src="https://i.ibb.co/xS4gfhhh/pngwing-com.png" alt="Telenor">
+                </div>
+                <div class="operator-name">Telenor</div>
+                <div class="operator-offer">Free 5GB or 100 Minutes</div>
+            </div>
+            
+            <div class="operator-card jazz" data-operator="jazz">
+                <div class="operator-logo">
+                    <img src="https://i.ibb.co/xSfXKyYm/Jazz-Company-logo.png" alt="Jazz">
+                </div>
+                <div class="operator-name">Jazz</div>
+                <div class="operator-offer">Free 5GB or 100 Minutes</div>
+            </div>
+            
+            <div class="operator-card ufone" data-operator="ufone">
+                <div class="operator-logo">
+                    <img src="https://i.ibb.co/gMgN4Py0/pngwing-com-1.png" alt="Ufone">
+                </div>
+                <div class="operator-name">Ufone</div>
+                <div class="operator-offer">Free 5GB or 100 Minutes</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            Celebrate 78 years of Pakistan's independence with exclusive offers from all networks!<br>
+            Offer valid till 31st August 2025. Terms and conditions apply.
+        </div>
+    </div>
+    
+    <!-- Zong Form Page -->
+    <div class="form-page" id="zong-page">
+        <div class="form-header">
+            <div class="form-operator-logo">
+                <img src="https://i.ibb.co/cSqWrGbm/Zong-4g-Mobile-Sim-Company-Logo-PNG-Image.png" alt="Zong">
+            </div>
+            <div class="form-title">Zong - Azadi Offer</div>
+            <div class="form-subtitle">Free 5GB Internet or 100 Minutes</div>
+        </div>
+        
+        <div class="input-group">
+            <input type="tel" id="zong-number" placeholder="Enter your Zong number" maxlength="11">
+            <div id="zong-error" class="error-message"></div>
+        </div>
+        
+        <button class="submit-btn internet" id="zong-submit">
+            <i class="fas fa-rocket"></i> Get Your Offer Now
+        </button>
+        
+        <div id="zong-success" class="success-message"></div>
+        
+        <button class="back-btn" id="zong-back"><i class="fas fa-arrow-left"></i> Back to Operators</button>
+    </div>
+    
+    <!-- Telenor Form Page -->
+    <div class="form-page" id="telenor-page">
+        <div class="form-header">
+            <div class="form-operator-logo">
+                <img src="https://i.ibb.co/xS4gfhhh/pngwing-com.png" alt="Telenor">
+            </div>
+            <div class="form-title">Telenor - Azadi Offer</div>
+            <div class="form-subtitle">Free 5GB Internet or 100 Minutes</div>
+        </div>
+        
+        <div class="input-group">
+            <input type="tel" id="telenor-number" placeholder="Enter your Telenor number" maxlength="11">
+            <div id="telenor-error" class="error-message"></div>
+        </div>
+        
+        <button class="submit-btn" id="telenor-submit">
+            <i class="fas fa-gift"></i> Claim Your Offer
+        </button>
+        
+        <div id="telenor-success" class="success-message"></div>
+        
+        <button class="back-btn" id="telenor-back"><i class="fas fa-arrow-left"></i> Back to Operators</button>
+    </div>
+    
+    <!-- Jazz Form Page -->
+    <div class="form-page" id="jazz-page">
+        <div class="form-header">
+            <div class="form-operator-logo">
+                <img src="https://i.ibb.co/xSfXKyYm/Jazz-Company-logo.png" alt="Jazz">
+            </div>
+            <div class="form-title">Jazz - Azadi Offer</div>
+            <div class="form-subtitle">Free 5GB Internet or 100 Minutes</div>
+        </div>
+        
+        <div class="input-group">
+            <input type="tel" id="jazz-number" placeholder="Enter your Jazz number" maxlength="11">
+            <div id="jazz-error" class="error-message"></div>
+        </div>
+        
+        <button class="submit-btn internet" id="jazz-submit">
+            <i class="fas fa-bolt"></i> Activate Free Offer
+        </button>
+        
+        <div id="jazz-success" class="success-message"></div>
+        
+        <button class="back-btn" id="jazz-back"><i class="fas fa-arrow-left"></i> Back to Operators</button>
+    </div>
+    
+    <!-- Ufone Form Page -->
+    <div class="form-page" id="ufone-page">
+        <div class="form-header">
+            <div class="form-operator-logo">
+                <img src="https://i.ibb.co/gMgN4Py0/pngwing-com-1.png" alt="Ufone">
+            </div>
+            <div class="form-title">Ufone - Azadi Offer</div>
+            <div class="form-subtitle">Free 5GB Internet or 100 Minutes</div>
+        </div>
+        
+        <div class="input-group">
+            <input type="tel" id="ufone-number" placeholder="Enter your Ufone number" maxlength="11">
+            <div id="ufone-error" class="error-message"></div>
+        </div>
+        
+        <button class="submit-btn" id="ufone-submit">
+            <i class="fas fa-mobile-alt"></i> Redeem Your Offer
+        </button>
+        
+        <div id="ufone-success" class="success-message"></div>
+        
+        <button class="back-btn" id="ufone-back"><i class="fas fa-arrow-left"></i> Back to Operators</button>
+    </div>
+    
+    <script>
+        // Define operator prefixes
+        const operatorPrefixes = {
+            jazz: ['0300', '0301', '0302', '0303', '0304', '0305', '0306', '0307', '0308', '0309'],
+            zong: ['0310', '0311', '0312', '0313', '0314', '0315', '0316', '0317', '0318', '0319'],
+            ufone: ['0330', '0331', '0332', '0333', '0334', '0335', '0336', '0337', '0338', '0339'],
+            telenor: ['0340', '0341', '0342', '0343', '0344', '0345', '0346', '0347', '0348', '0349']
+        };
+        
+        // Create decorative stars
+        function createStars() {
+            const starsCount = 30;
+            const body = document.body;
+            
+            for (let i = 0; i < starsCount; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.innerHTML = '★';
+                
+                // Random position
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+                
+                // Random animation delay
+                star.style.animationDelay = `${Math.random() * 3}s`;
+                
+                body.appendChild(star);
+            }
+        }
+        
+        // Operator selection
+        document.querySelectorAll('.operator-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const operator = card.getAttribute('data-operator');
+                document.getElementById('main-page').style.display = 'none';
+                document.getElementById(`${operator}-page`).style.display = 'block';
+                // Clear any previous errors
+                document.getElementById(`${operator}-error`).textContent = '';
+            });
+        });
+        
+        // Go back to main page
+        function goBack(operator) {
+            document.getElementById(`${operator}-page`).style.display = 'none';
+            // Clear inputs and errors
+            document.getElementById(`${operator}-number`).value = '';
+            document.getElementById(`${operator}-error`).textContent = '';
+            document.getElementById(`${operator}-success`).style.display = 'none';
+            document.getElementById(`${operator}-success`).textContent = '';
+            document.getElementById('main-page').style.display = 'block';
+        }
+        
+        // Setup back buttons
+        document.getElementById('zong-back').addEventListener('click', () => goBack('zong'));
+        document.getElementById('telenor-back').addEventListener('click', () => goBack('telenor'));
+        document.getElementById('jazz-back').addEventListener('click', () => goBack('jazz'));
+        document.getElementById('ufone-back').addEventListener('click', () => goBack('ufone'));
+        
+        // Form submission with redirection
+        function submitForm(operator) {
+            const numberInput = document.getElementById(`${operator}-number`);
+            const errorElement = document.getElementById(`${operator}-error`);
+            const successElement = document.getElementById(`${operator}-success`);
+            const submitBtn = document.getElementById(`${operator}-submit`);
+            const number = numberInput.value.trim();
+            
+            // Clear previous errors and success
+            errorElement.textContent = '';
+            successElement.style.display = 'none';
+            successElement.textContent = '';
+            
+            // Basic validation
+            if (!number || number.length !== 11 || isNaN(number)) {
+                errorElement.textContent = `Please enter a valid 11-digit ${operator} number`;
+                return;
+            }
+            
+            // Prefix validation
+            const prefix = number.substring(0, 4);
+            if (!operatorPrefixes[operator].includes(prefix)) {
+                errorElement.textContent = `This number does not belong to ${operator}`;
+                return;
+            }
+            
+            // Disable only the submit button during processing
+            submitBtn.disabled = true;
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+            
+            // Simulate processing time
+            setTimeout(() => {
+                // Show success message
+                successElement.textContent = `Offer activated successfully for ${number}!`;
+                successElement.style.display = 'block';
+                
+                // Re-enable submit button
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalText;
+                
+                // After 3 seconds, redirect to operator page
+                setTimeout(() => {
+                    const operatorUrls = {
+                        'zong': 'https://www.zong.com.pk/azadi-offer',
+                        'telenor': 'https://www.telenor.com.pk/azadi-offer',
+                        'jazz': 'https://www.jazz.com.pk/azadi-offer',
+                        'ufone': 'https://www.ufone.com/azadi-offer'
+                    };
+                    
+                    // Redirect to the URL
+                    window.location.href = operatorUrls[operator];
+                }, 3000);
+            }, 2000);
+        }
+        
+        // Setup submit buttons
+        document.getElementById('zong-submit').addEventListener('click', () => submitForm('zong'));
+        document.getElementById('telenor-submit').addEventListener('click', () => submitForm('telenor'));
+        document.getElementById('jazz-submit').addEventListener('click', () => submitForm('jazz'));
+        document.getElementById('ufone-submit').addEventListener('click', () => submitForm('ufone'));
+        
+        // Add input validation
+        document.querySelectorAll('input[type="tel"]').forEach(input => {
+            input.addEventListener('input', function() {
+                this.value = this.value.replace(/\D/g, '');
+                // Clear error when typing
+                const operator = this.id.split('-')[0];
+                document.getElementById(`${operator}-error`).textContent = '';
+                document.getElementById(`${operator}-success`).style.display = 'none';
+            });
+        });
+        
+        // Countdown timer for offer expiration
+        function updateCountdown() {
+            const offerEndDate = new Date('August 31, 2025 23:59:59').getTime();
+            const now = new Date().getTime();
+            const distance = offerEndDate - now;
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        // Initialize
+        window.onload = function() {
+            createStars();
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        };
+    </script>
+</body>
+</html>
