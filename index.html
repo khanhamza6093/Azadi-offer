@@ -83,21 +83,6 @@
             position: relative;
         }
         
-        .flag-decoration {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 15px;
-            height: 20px;
-        }
-        
-        .flag-stripe {
-            height: 100%;
-            width: 30%;
-        }
-        
-        .stripe-green { background-color: #0a5; }
-        .stripe-white { background-color: white; }
-        
         h1 {
             font-size: 2.8rem;
             color: #ffcc00;
@@ -107,6 +92,19 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             letter-spacing: 1px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        h1:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            width: 50%;
+            height: 4px;
+            background: linear-gradient(to right, #00cc66, #ffcc00, #00cc66);
+            border-radius: 2px;
         }
         
         h2 {
@@ -600,11 +598,6 @@
     
     <div class="container" id="main-page">
         <header>
-            <div class="flag-decoration">
-                <div class="flag-stripe stripe-green"></div>
-                <div class="flag-stripe stripe-white"></div>
-                <div class="flag-stripe stripe-green"></div>
-            </div>
             <h1>Azadi Offer 2025</h1>
             <h2>Muft 5GB Internet or 100 Minutes</h2>
         </header>
