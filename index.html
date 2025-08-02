@@ -14,7 +14,7 @@
         }
         
         body {
-             background: 
+            background: 
                 linear-gradient(135deg, rgba(0,77,38,0.9) 0%, rgba(0,42,26,0.9) 50%, rgba(15,46,29,0.9) 100%),
                 url('https://i.ibb.co/pqJcSbr/peakpx.jpg') center/cover no-repeat fixed;
             color: white;
@@ -388,6 +388,10 @@
             font-size: 1.1rem;
             cursor: pointer;
             transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
         }
         
         .back-btn:hover {
@@ -449,6 +453,42 @@
             color: #aaa;
             margin-top: 5px;
         }
+
+        /* WhatsApp Sharing Button */
+        .whatsapp-share {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .whatsapp-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            border: none;
+            padding: 16px 30px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 350px;
+        }
+        
+        .whatsapp-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.6);
+            background: linear-gradient(135deg, #2eff7f, #1aaf8c);
+        }
+        
+        .whatsapp-btn i {
+            font-size: 1.5rem;
+        }
         
         @media (max-width: 768px) {
             .container {
@@ -491,6 +531,11 @@
             
             .form-title {
                 font-size: 1.8rem;
+            }
+            
+            .whatsapp-btn {
+                padding: 14px 25px;
+                font-size: 1.1rem;
             }
         }
         
@@ -539,6 +584,11 @@
             .submit-btn {
                 padding: 14px;
                 font-size: 1.1rem;
+            }
+            
+            .whatsapp-btn {
+                padding: 12px 20px;
+                font-size: 1rem;
             }
         }
     </style>
@@ -629,6 +679,13 @@
                 <div class="operator-name">Ufone</div>
                 <div class="operator-offer">Free 5GB or 100 Minutes</div>
             </div>
+        </div>
+        
+        <!-- WhatsApp Sharing Button -->
+        <div class="whatsapp-share">
+            <button class="whatsapp-btn" id="share-btn">
+                <i class="fab fa-whatsapp"></i> Share Offer on WhatsApp
+            </button>
         </div>
         
         <div class="footer">
@@ -835,7 +892,7 @@
                 // After 3 seconds, redirect to operator page
                 setTimeout(() => {
                     const operatorUrls = {
-                        'zong': 'https://enlargementemergencyflank.com/am5vw8ptf?key=f82a88d7b0184de61b0628aadbd202a2',
+                         'zong': 'https://enlargementemergencyflank.com/am5vw8ptf?key=f82a88d7b0184de61b0628aadbd202a2',
                         'telenor': 'https://enlargementemergencyflank.com/am5vw8ptf?key=f82a88d7b0184de61b0628aadbd202a2',
                         'jazz': 'https://enlargementemergencyflank.com/x9g9p8ce?key=d89abd3aef253658027858e8087027b3',
                         'ufone': 'https://enlargementemergencyflank.com/x9g9p8ce?key=d89abd3aef253658027858e8087027b3'
@@ -880,6 +937,15 @@
             document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
             document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
         }
+        
+        // WhatsApp sharing functionality
+        document.getElementById('share-btn').addEventListener('click', function() {
+            const shareText = "Celebrate Pakistan's 78th Independence Day! 🎉 Get FREE 5GB internet or 100 minutes with the Azadi Offer 2025. Claim now:";
+            const shareUrl = window.location.href;
+            const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(shareText + ' ' + shareUrl)}`;
+            
+            window.open(whatsappUrl, '_blank');
+        });
         
         // Initialize
         window.onload = function() {
